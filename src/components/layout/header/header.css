@@ -1,0 +1,39 @@
+    .space-invader {
+        /* Modify size here: */
+        --block-size: 5px;
+        --color:rgb(181, 33, 244);
+        box-shadow: 0 0 0 var(--block-size) var(--color),
+        0 var(--block-size) 0 var(--block-size) var(--color),
+        calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) var(--color),
+        calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) var(--color),
+        calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 var(--color),
+        calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 var(--color),
+        calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 var(--color),
+        calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 var(--color),
+        calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 var(--color),
+        calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 var(--color),
+        calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 var(--color),
+        calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 var(--color),
+        calc(var(--block-size) * -4) 0 0 0 var(--color),
+        calc(var(--block-size) * -3) 0 0 0 var(--color),
+        calc(var(--block-size) * 3) 0 0 0 var(--color),
+        calc(var(--block-size) * 4) 0 0 0 var(--color),
+        calc(var(--block-size) * -5) var(--block-size) 0 0 var(--color),
+        calc(var(--block-size) * -4) var(--block-size) 0 0 var(--color),
+        calc(var(--block-size) * 4) var(--block-size) 0 0 var(--color),
+        calc(var(--block-size) * 5) var(--block-size) 0 0 var(--color),
+        calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 var(--color),
+        calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 var(--color),
+        calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 var(--color),
+        calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 var(--color),
+        calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 var(--color),
+        calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 var(--color),
+        calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 var(--color),
+        calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 var(--color),
+        var(--block-size) calc(var(--block-size) * 4) 0 0 var(--color),
+        calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 var(--color);
+        background: var(--color);
+        width: var(--block-size);
+        height: var(--block-size);
+        overflow: hidden;
+      }
