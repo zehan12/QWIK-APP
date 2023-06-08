@@ -5,7 +5,7 @@ export default component$(() => {
   const isOpen = useSignal(false);
   return (
     <>
-      <div class="font-sans m-0">
+      <div class="font-sans sticky top-0 z-10 backdrop-filter backdrop-blur-lg">
         <div
           class="shadow-[0_35px_60px_-15px_black] border-b border-gray-500"
           style={{
