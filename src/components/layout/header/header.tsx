@@ -1,7 +1,8 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import "./header.css";
 
 export default component$(() => {
+  const isOpen = useSignal(false);
   return (
     <>
       <div class="font-sans m-0">
@@ -13,8 +14,7 @@ export default component$(() => {
         >
           <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
-              <div class="space-invader"></div>
-
+              <div class="space-invader md:mx-1 mx-10"></div>
               <div
                 class="hidden sm:flex sm:items-center"
                 style={{
@@ -69,10 +69,11 @@ export default component$(() => {
                 </a>
               </div>
 
-              <div class="sm:hidden cursor-pointer">
+              <div class="sm:hidden cursor-pointer" 
+              onClick$={() => (isOpen.value = !isOpen.value) }>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6 text-purple-600"
+                  class="w-6 h-6 text-yellow-600"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -83,47 +84,49 @@ export default component$(() => {
               </div>
             </div>
 
-            <div class="block sm:hidden border-t-[0.1px] py-2">
-              <div class="flex flex-col">
-                <a
-                  href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mb-1"
-                >
-                  Products
-                </a>
-                <a
-                  href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mb-1"
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mb-1"
-                >
-                  Partners
-                </a>
-                <a
-                  href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mb-1"
-                >
-                  Pricing
-                </a>
-                <div class="flex justify-between items-center border-t-[0.3px] pt-2">
+            <div class="sm:hidden">
+              {!isOpen.value && (
+                <div class="flex flex-col border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2">
                   <a
                     href="#"
-                    class="text-white text-sm font-normal hover:text-purple-600 mr-4"
+                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
                   >
-                    Sign in
+                    Products
                   </a>
                   <a
                     href="#"
-                    class="text-white text-sm font-normal border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
                   >
-                    Sign up
+                    Marketplace
                   </a>
+                  <a
+                    href="#"
+                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                  >
+                    Partners
+                  </a>
+                  <a
+                    href="#"
+                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                  >
+                    Pricing
+                  </a>
+                  <div class="flex justify-between items-center border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2 pt-2">
+                    <a
+                      href="#"
+                      class="text-white text-sm font-normal hover:text-purple-600 mr-4"
+                    >
+                      Sign in
+                    </a>
+                    <a
+                      href="#"
+                      class="text-white text-sm font-normal border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                    >
+                      Sign up
+                    </a>
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
