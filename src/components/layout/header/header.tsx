@@ -26,25 +26,25 @@ export default component$(() => {
               >
                 <a
                   href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mx-[12px]"
+                  class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Products
                 </a>
                 <a
                   href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mx-[12px]"
+                  class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Marketplace
                 </a>
                 <a
                   href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mx-[12px]"
+                  class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Partners
                 </a>
                 <a
                   href="#"
-                  class="text-white text-sm font-normal hover:text-purple-600 mx-[12px]"
+                  class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Pricing
                 </a>
@@ -89,38 +89,38 @@ export default component$(() => {
                 <div class="flex flex-col border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2">
                   <a
                     href="#"
-                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                    class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Products
                   </a>
                   <a
                     href="#"
-                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                    class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Marketplace
                   </a>
                   <a
                     href="#"
-                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                    class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Partners
                   </a>
                   <a
                     href="#"
-                    class="text-white text-sm font-normal hover:text-purple-600 mb-1"
+                    class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Pricing
                   </a>
                   <div class="flex justify-between items-center border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2 pt-2">
                     <a
                       href="#"
-                      class="text-white text-sm font-normal hover:text-purple-600 mr-4"
+                      class="text-white text-sm font-normal hover:text-[goldenrod] mr-4"
                     >
                       Sign in
                     </a>
                     <a
                       href="#"
-                      class="text-white text-sm font-normal border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600"
+                      class="text-white text-sm font-normal border px-4 py-1 rounded-lg hover:bg-purple-600 hover:border-purple-600"
                     >
                       Sign up
                     </a>

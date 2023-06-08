@@ -10,7 +10,7 @@ html {
     background:linear-gradient(175deg, rgba(0,0,0,1) 2%, rgba(34,18,75,1) 44%);
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 100%;
+    height:max-content;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: subpixel-antialiased;
     font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1;
