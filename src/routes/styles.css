@@ -1,13 +1,21 @@
 /* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
 
 /* SHELL ---------------------------------------- */
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
 html {
   color: goldenrod;
   background-color: rgb(15, 9, 41);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
-    background:linear-gradient(175deg, rgba(0,0,0,1) 2%, rgba(34,18,75,1) 44%);
+    /* background:linear-gradient(175deg, rgba(0,0,0,1) 2%, rgba(34,18,75,1) 44%); */
+    background: rgb(4,0,21);
+background: linear-gradient(180deg, rgba(4,0,21,1) 69%, rgba(0,0,0,1) 100%, rgba(4,0,21,1) 1000%);
     background-repeat: no-repeat; 
     background-size: cover;
     height:max-content;
