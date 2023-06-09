@@ -5,13 +5,16 @@ import Billboard from "~/components/common/billboard";
 import Billboardone from "~/components/common/billboardone";
 import CelebrityCard from "~/components/common/celebrityCard";
 import Hero from "~/components/hero";
+import withRouter from "~/hoc/withRouter";
 
-export default component$(() => {
-  return (
-    <>
-      <Hero />
-      {/* <Billboard /> */}
-      {/* <Billboardone
+export default component$(
+  withRouter((props: any) => {
+    console.log(props);
+    return (
+      <>
+        <Hero />
+        {/* <Billboard /> */}
+        {/* <Billboardone
         title=""
         img={
           "/images/natalie-portman.jpg"
@@ -33,11 +36,12 @@ export default component$(() => {
       }
       heading={"keira knightley"}
       /> */}
-      <h1>Body here</h1>
-      <BackgroundVideo />
-    </>
-  );
-});
+        <h1>Body here</h1>
+        <BackgroundVideo />
+      </>
+    );
+  })
+);
 
 export const head: DocumentHead = {
   title: "Art App",
