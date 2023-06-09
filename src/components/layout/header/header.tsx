@@ -1,5 +1,6 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import "./header.css";
+import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const isOpen = useSignal(false);
@@ -24,40 +25,40 @@ export default component$(() => {
                   borderRadius: "999px",
                 }}
               >
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
-                  Products
-                </a>
-                <a
-                  href="#"
+                  Index
+                </Link>
+                <Link
+                  href="/home"
                   class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
-                  Marketplace
-                </a>
-                <a
+                  Home
+                </Link>
+                <Link
                   href="#"
                   class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Partners
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   class="text-white text-sm font-normal hover:text-[goldenrod] mx-[12px]"
                 >
                   Pricing
-                </a>
+                </Link>
               </div>
 
               <div class="hidden sm:flex sm:items-center">
-                <a
+                <Link
                   href="#"
                   class="text-white text-sm font-normal hover:text-purple-600 mr-4"
                 >
                   Sign in
-                </a>
-                <a
+                </Link>
+                <Link
                   style={{
                     border: "1px solid rgba(255,255,255,.08)",
                     boxShadow: "inset 0 -7px 11px #a48fff1f",
@@ -66,7 +67,7 @@ export default component$(() => {
                   class="text-white text-sm font-normal border px-4 py-2 rounded-lg hover:bg-purple-600 hover:border-purple-600"
                 >
                   Sign up
-                </a>
+                </Link>
               </div>
 
               <div class="sm:hidden cursor-pointer" 
@@ -87,43 +88,43 @@ export default component$(() => {
             <div class="sm:hidden">
               {!isOpen.value && (
                 <div class="flex flex-col border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2">
-                  <a
+                  <Link
                     href="#"
                     class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Products
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Marketplace
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Partners
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     class="text-white text-sm font-normal hover:text-[goldenrod] mb-1"
                   >
                     Pricing
-                  </a>
+                  </Link>
                   <div class="flex justify-between items-center border-t-[1px] border-t-[rgba(255,255,255,.08)] py-2 px-2 pt-2">
-                    <a
+                    <Link
                       href="#"
                       class="text-white text-sm font-normal hover:text-[goldenrod] mr-4"
                     >
                       Sign in
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="#"
                       class="text-white text-sm font-normal border px-4 py-1 rounded-lg hover:bg-purple-600 hover:border-purple-600"
                     >
                       Sign up
-                    </a>
+                    </Link>
                   </div>
                 </div>
               )}
