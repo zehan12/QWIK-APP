@@ -23,7 +23,7 @@ export default component$(() => {
           </a>
         </div>
 
-        <div class="flex flex-col gap-4 px-8 py-10 pb-20 mx-20">
+        <div class="flex flex-col gap-4 px-8 py-10 pb-20 sm:mx-20">
           <div class="text-lg text-white fonts">Qwik App</div>
           <div class="flex flex-row items-center gap-2">
             <span class="text-sm opacity-80">Made with</span>
