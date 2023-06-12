@@ -1,42 +1,20 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import BackgroundVideo from "~/components/common/backgroundVideo";
-import Billboard from "~/components/common/billboard";
-import Billboardone from "~/components/common/billboardone";
-import CelebrityCard from "~/components/common/celebrityCard";
-import Hero from "~/components/hero";
+import HeroBlockOne from "~/components/heroBlockOne";
+import HeroBlockTwo from "~/components/heroBlockTwo";
+import Circle from "~/components/index/circle/circle";
 import withRouter from "~/hoc/withRouter";
 
 export default component$(
   withRouter((props: any) => {
-    console.log(props);
     return (
       <>
-        <Hero />
-        {/* <Billboard /> */}
-        {/* <Billboardone
-        title=""
-        img={
-          "/images/natalie-portman.jpg"
-        }
-        heading={"natalie portman"}
-      />
-
-      <Billboardone
-        title=""
-        img={
-          "/images/keira-knightley.jpg"
-        }
-        heading={"keira knightley"}
-      />
-      <CelebrityCard
-      title=""
-      img={
-        "/images/keira-knightley.jpg"
-      }
-      heading={"keira knightley"}
-      /> */}
+        <HeroBlockOne />
         <h1>Body here</h1>
+        <HeroBlockTwo />
+        <h1 class="text-center">{"<<<<<<<<<<<<<<<<<<<<<<+++++++++++++++END+++++++++++>>>>>>>>>>>>>>>>>>>>>"}</h1>
+        <Circle />
         <BackgroundVideo />
       </>
     );

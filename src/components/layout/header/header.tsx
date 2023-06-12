@@ -2,11 +2,12 @@ import { component$, useSignal } from "@builder.io/qwik";
 import "./header.css";
 import { Link } from "@builder.io/qwik-city";
 
-export default component$(() => {
+export default component$((props) => {
+  console.log(props,)
   const isOpen = useSignal(false);
   return (
     <>
-      <div class="font-sans sticky top-0 z-10 backdrop-filter backdrop-blur-lg">
+      <div class="font-sans sticky top-0 z-10 backdrop-filter backdrop-blur-lg  inset-x-0">
         <div
           class="shadow-[0_35px_60px_-15px_black] border-b border-gray-500"
           style={{
